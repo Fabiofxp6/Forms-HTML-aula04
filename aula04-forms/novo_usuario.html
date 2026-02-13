@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Usuário</title>
+</head>
+<body>
+    <div>
+        <form action="login.html" method="post">
+            <h1>Criar Novo Usuário</h1>
+            <div>
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" name="nome" required placeholder="Digite seu Nome">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" required placeholder="Digite seu Email">
+            </div>
+            <div>
+                <label for="senha">Senha:</label> 
+                <input type="password" id="senha" name="senha" required placeholder="Digite sua Senha">
+            </div>
+            <div>
+                <label for="confirmar_senha">Confirmar Senha:</label>
+                <input type="password" id="confirmar_senha" name="confirmar_senha" required placeholder="Confirme sua Senha">
+            </div>
+            
+            <div>
+                <button type="button" onclick="location.href='login.html'">Voltar</button>
+                <input type="reset" value="Limpar">
+                <button type="submit">Criar Usuário</button>
+                <button type="button" onclick="location.href='tabela.html'">Tabela</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
