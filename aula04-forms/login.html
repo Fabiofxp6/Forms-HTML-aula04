@@ -3,29 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>entrar no sistema</title>
+    <title>Login</title>
 </head>
 <body>
-
-    <div>
     <h1>Login</h1>
-    <form method="post">
-        <div>
-            <label for="email">Email:</label>
-            <input id="email" type="email" name="email" required placeholder="Digite seu Email">
-        </div>
-        <div>
-            <label for="senha">Senha:</label> 
-            <input type="password" id="senha" name="Senha" required placeholder="Digite sua Senha">
-        </div>
+    <div class="login-container">
+    <form action="process_login.php" method="post">
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="username" required><br><br>
         
-        <div>
-            <button type="button" onclick="location.href='novo_usuario.html'">Novo Usuário</button>
-            <input type="reset" value="Limpar">
-            <button type="submit">Entrar</button>
-        </div>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <input class="reset-button" type="reset">
+        <input class="new_user" type="button" onclick="location.href='novo_usuario.html'" value="Novo usuario">
+        <input class="submit-button" type="submit" value="Entrar">
     </form>
     </div>
-
+    
 </body>
 </html>
